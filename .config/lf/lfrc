@@ -1,0 +1,10 @@
+set previewer kitty
+set icons true
+set drawbox true
+set cleaner ctpvclear
+set hidden true
+&ctpv -s $id
+&ctpvquit $id
+
+map o $nvim
+
