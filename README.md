@@ -11,6 +11,7 @@ Arch setup dotfiles: Streamlined for efficiency &amp; aesthetics. Customized con
 
 - [Overview](#overview)
 - [Packages](#packages)
+- [Installation](#installation)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -28,6 +29,29 @@ You can grab the config files and install packages by hand with this commnad
 
 ```
 yay -Sy hyprland-bin kitty waybar-hyprland swaybg swaylock-effects wofi mako ttf-jetbrains-mono-nerd noto-fonts-emoji polkit-gnome xdg-desktop-portal-hyprland-git lxappearance brightnessctl starship
+```
+
+# Installation
+
+Just install the packages and copy the config files that works for most of the time with additional dependencies.
+
+1. Clone the repo
+
+```
+git clone https://github.com/Srinath10X/dotfiles.git
+```
+
+2. Make sure that you have installed all the packages and its dependencies
+3. cd to the dotfiles directory
+
+```
+cd dotfiles
+```
+
+4. Copy the dotfiles into the .config directory
+
+```
+cp -r .config/* ~/.config
 ```
 
 ## Contributing
