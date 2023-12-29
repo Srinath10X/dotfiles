@@ -1,4 +1,7 @@
-set previewer kitty
+set previewer ctpv
+set cleaner ctpvclear
+&ctpv -s $id
+&ctpvquit $id
 set icons true
 set drawbox true
 set cleaner ctpvclear
