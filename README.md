@@ -7,6 +7,13 @@ Arch setup dotfiles: Streamlined for efficiency &amp; aesthetics. Customized con
 ![screenshot-1](./assets/screenshots/screenshot-1.png)
 ![screenshot-1](./assets/screenshots/screenshot-2.png)
 
+## Table of Contents
+
+- [Overview](#overview)
+- [Packages](#packages)
+- [Contributing](#contributing)
+- [License](#license)
+
 ## Overview
 
 - **OS** - EndeavourOS
@@ -15,10 +22,13 @@ Arch setup dotfiles: Streamlined for efficiency &amp; aesthetics. Customized con
 - **WM** - hyprland
 - **Editor** - Neovim
 
-## Table of Contents
+# Packages
 
-- [Contributing](#contributing)
-- [License](#license)
+You can grab the config files and install packages by hand with this commnad
+
+```
+yay -Sy hyprland-bin kitty waybar-hyprland swaybg swaylock-effects wofi mako ttf-jetbrains-mono-nerd noto-fonts-emoji polkit-gnome xdg-desktop-portal-hyprland-git lxappearance brightnessctl starship
+```
 
 ## Contributing
 
