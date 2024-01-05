@@ -56,7 +56,7 @@ cp -r .config/* ~/.config
 
 # Note
 
-I have just nuked my previous desktop
+I have just nuked my previous desktop my current setup is more or less the same. Instead of using p10k I am using p9k as my zsh theme and some extra configurations will be added soon
 
 ## Contributing
 
