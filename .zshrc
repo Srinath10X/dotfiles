@@ -534,3 +534,7 @@ alias vim="neovide . && exit"
 
 export ANDROID_HOME=/home/srinath/Android/Sdk
 export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
+
+
+alias fzf1='clear && fzf --prompt=" 󰍉 Search " --height=~100% --layout=reverse --border --exit-0'
+alias fzf2='clear && fzf --prompt=" 󰍉 Search " --height=~100% --layout=reverse --border --pointer="󰁕" --color='fg:#89b4fa' --no-scrollbar  --exit-0'
