@@ -1,6 +1,13 @@
 # Wayland
 export qt_qpa_platform=wayland
 
+# Android Sdk
+export ANDROID_HOME=/home/srinath/Android/Sdk
+export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
+
+# fzf default options
+export FZF_DEFAULT_OPTS='--prompt=" 󰍉 Search " --height=~100% --layout=reverse --border --pointer="󰁕" --no-scrollbar  --exit-0'
+
 # LF_ICONS
 export LF_ICONS="\
 tw=󰉋:\
@@ -165,6 +172,3 @@ ex=:\
 *.nix=:\
 "
 
-# Android Sdk
-export ANDROID_HOME=/home/srinath/Android/Sdk
-export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools

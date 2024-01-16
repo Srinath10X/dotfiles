@@ -534,4 +534,3 @@ alias vim="neovide . && exit"
 
 export ANDROID_HOME=/home/srinath/Android/Sdk
 export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
-
