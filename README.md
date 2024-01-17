@@ -7,6 +7,7 @@ Arch setup dotfiles: Streamlined for efficiency &amp; aesthetics. Customized con
 ![screenshot-1](./assets/screenshots/showcase-1.png)
 ![screenshot-2](./assets/screenshots/showcase-2.png)
 ![screenshot-3](./assets/screenshots/showcase-3.png)
+![screenshot-4](./assets/screenshots/showcase-4.png)
 
 ## Table of Contents
 
