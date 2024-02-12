@@ -538,5 +538,12 @@ alias la='exa -a --icons --color=always --group-directories-first'
 alias l='exa -F --icons --color=always --group-directories-first'
 alias l.='exa -a | egrep "^\."'
 
+alias tt="tt -theme catppuccin"
+
+alias ga="git add ."
+alias gc="git commit -m "
+alias gp="git push"
+
+
 export ANDROID_HOME=/home/srinath/Android/Sdk
 export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
