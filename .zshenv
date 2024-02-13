@@ -5,6 +5,9 @@ export qt_qpa_platform=wayland
 export ANDROID_HOME=/home/srinath/Android/Sdk
 export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
 
+# Ags skip v cheak 
+export AGS_SKIP_V_CHECK=true ags
+
 # fzf default options
 export FZF_DEFAULT_OPTS='--prompt=" 󰍉 Search " --height=~100% --layout=reverse --border --pointer="󰁕" --no-scrollbar  --exit-0'
 
