@@ -538,7 +538,7 @@ alias la='exa -a --icons --color=always --group-directories-first'
 alias l='exa -F --icons --color=always --group-directories-first'
 alias l.='exa -a | egrep "^\."'
 
-alias tt="tt -theme catppuccin"
+alias tt="tt -theme catppuccin -t 15"
 
 alias ga="git add ."
 alias gc="git commit -m "
