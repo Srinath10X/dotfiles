@@ -1,0 +1,59 @@
+{
+  "auto-login": false,
+  "shell": "zsh",
+  "zsh": {
+    "oh-my-zsh": true,
+    "powerlevel10k": true,
+    "zsh-theme": "robbyrussell"
+  },
+  "packages": [
+    "htop",
+    "neofetch",
+    "cava",
+    "cmus",
+    "eza",
+    "git",
+    "github-cli",
+    "fzf",
+    "neovim",
+    "tgpt-bin",
+    "ranger",
+    "ctpv-git",
+    "lf",
+    "yt-dlp",
+    "unzip",
+    "wget",
+    "yt-dlp",
+    "zsh",
+
+    "gcc",
+    "nodejs",
+    "npm",
+
+    "mpv",
+    "mupdf",
+
+    "ttf-jetbrains-mono-nerd",
+
+    "kitty",
+    "hyprland",
+    "hyprshot",
+    "waybar",
+    "wofi",
+    "mako",
+    "gammastep",
+    "brightnessctl",
+    "polkit-gnome",
+    "swaybg",
+    "swaylock-effects",
+    "qt6-wayland",
+    "qt6-base",
+    "qt5-wayland",
+    "xdg-desktop-portal-hyprland",
+
+    "spotify-adblock",
+    "etcher-bin",
+    "gparted",
+    "lunacy-bin"
+  ]
+}
