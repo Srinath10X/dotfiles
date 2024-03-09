@@ -7,7 +7,6 @@ Arch setup dotfiles: Streamlined for efficiency &amp; aesthetics. Customized con
 ![screenshot-1](./assets/screenshots/screenshot-1.png)
 ![screenshot-2](./assets/screenshots/screenshot-2.png)
 ![screenshot-3](./assets/screenshots/screenshot-3.png)
-![screenshot-4](./assets/screenshots/screenshot-4.png)
 
 ## Table of Contents
 
@@ -25,15 +24,7 @@ Arch setup dotfiles: Streamlined for efficiency &amp; aesthetics. Customized con
 - **WM** - hyprland
 - **Editor** - Neovim
 
-# Packages
-
-You can grab the config files and install packages by hand with this commnad
-
-```
-yay -Sy ctpv-git hyprland-bin kitty waybar-hyprland swaybg swaylock-effects wofi mako ttf-jetbrains-mono-nerd noto-fonts-emoji polkit-gnome xdg-desktop-portal-hyprland lxappearance brightnessctl starship
-```
-
-# Installation
+## Installation
 
 Just install the packages and copy the config files that works for most of the time with additional dependencies.
 
@@ -56,9 +47,11 @@ cd dotfiles
 cp -r .config/* ~/.config
 ```
 
-# Note
+5. Also copy the configuration.nix file
 
-I have just nuked my previous desktop my current setup is more or less the same. Instead of using p10k I am using p9k as my zsh theme and some extra configurations will be added soon
+```
+cp configuration.nix /etc/nixos/
+```
 
 ## Contributing
 
