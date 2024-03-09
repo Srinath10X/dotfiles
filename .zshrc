@@ -544,6 +544,16 @@ alias ga="git add ."
 alias gc="git commit -m "
 alias gp="git push"
 
+alias list-gens="sudo nix-env --list-generations --profile /nix/var/nix/profiles/system"
+alias delete-gen="sudo nix-env --profile /nix/var/nix/profiles/system --delete-generations"
+alias rebuild="sudo nixos-rebuild switch"
+alias config="sudo -e /etc/nixos/configuration.nix"
+alias configfmt="sudo nixfmt /etc/nixos/configuration.nix"
+
+#Neovim
+export EDITOR="nvim"
+export VISUAL="nvim"
+
 export AGS_SKIP_V_CHECK=true ags
 export ANDROID_HOME=/home/srinath/Android/Sdk
 export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools

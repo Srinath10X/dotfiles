@@ -5,6 +5,10 @@ export qt_qpa_platform=wayland
 export ANDROID_HOME=/home/srinath/Android/Sdk
 export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
 
+#Neovim
+export EDITOR="nvim"
+export VISUAL="nvim"
+
 # Ags skip v cheak 
 export AGS_SKIP_V_CHECK=true ags
 
