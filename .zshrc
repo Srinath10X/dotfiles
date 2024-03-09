@@ -554,6 +554,12 @@ alias configfmt="sudo nixfmt /etc/nixos/configuration.nix"
 export EDITOR="nvim"
 export VISUAL="nvim"
 
+#Grim
+export GRIM_DEFAULT_DIR=/home/srinath/Pictures/
+
+#Firefox
+export MOZ_ENABLE_WAYLAND=1
+
 export AGS_SKIP_V_CHECK=true ags
 export ANDROID_HOME=/home/srinath/Android/Sdk
 export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
