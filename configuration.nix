@@ -111,6 +111,7 @@
 		wl-clipboard
     zsh
     oh-my-zsh
+		yt-dlp
     zsh-completions
     zsh-syntax-highlighting
     zsh-history-search-multi-word

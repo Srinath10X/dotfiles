@@ -560,6 +560,9 @@ export GRIM_DEFAULT_DIR=/home/srinath/Pictures/
 #Firefox
 export MOZ_ENABLE_WAYLAND=1
 
+# Local binaries
+export PATH=$PATH:$HOME/.local/bin:$HOME/bin
+
 export AGS_SKIP_V_CHECK=true ags
 export ANDROID_HOME=/home/srinath/Android/Sdk
 export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools

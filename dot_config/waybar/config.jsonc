@@ -28,15 +28,15 @@
     "network",
     "custom/power_profile",
     "battery",
-    "clock"
+    "clock",
   ],
   "hyprland/window": {
-    "format": "{}"
+    "format": "{}",
   },
 
   "workspace": {
     "format": " {}",
-    "disable-scroll": false
+    "disable-scroll": false,
   },
   "hyprland/workspaces": {
     "disable-scroll": true,
@@ -46,13 +46,13 @@
     "persistent_workspaces": {
       "1": "",
       "2": "",
-      "3": ""
+      "3": "",
     },
     "format-icons": {
       "active": "  ",
       "persistent": "  ",
-      "default": "  "
-    }
+      "default": "  ",
+    },
   },
 
   "custom/power_profile": {
@@ -60,17 +60,17 @@
     "interval": 30,
     "format": "󰈐{}",
     "on-click": "asusctl profile -n; pkill -SIGRTMIN+8 waybar",
-    "signal": 8
+    "signal": 8,
   },
 
   "tray": {
     "icon-size": 18,
-    "spacing": 10
+    "spacing": 10,
   },
 
   "clock": {
     "format": "{: %I:%M %p}",
-    "tooltip-format": "<big>{:  %a,%d %b}</big>\n<tt><small>{calendar}</small></tt>"
+    "tooltip-format": "<big>{:  %a,%d %b}</big>\n<tt><small>{calendar}</small></tt>",
   },
 
   "backlight": {
@@ -79,20 +79,20 @@
     "format-icons": ["󰃞", "󰃟", "󰃠"],
     "on-scroll-up": "brightnessctl set 1%+",
     "on-scroll-down": "brightnessctl set 1%-",
-    "min-length": 6
+    "min-length": 6,
   },
 
   "battery": {
     "states": {
       "good": 95,
       "warning": 30,
-      "critical": 20
+      "critical": 20,
     },
     "format": "{icon} {capacity}%",
     "format-charging": " {capacity}%",
     "format-plugged": " {capacity}%",
     "format-alt": "{time} {icon}",
-    "format-icons": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"]
+    "format-icons": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
   },
 
   "pulseaudio": {
@@ -100,8 +100,8 @@
     "tooltip": false,
     "format-muted": " Muted",
     "on-click": "pamixer -t",
-    "on-scroll-up": "pamixer -i 5",
-    "on-scroll-down": "pamixer -d 5",
+    "on-scroll-up": "pamixer -i 5 --allow-boost",
+    "on-scroll-down": "pamixer -d 5 --allow-boost",
     "scroll-step": 5,
     "format-icons": {
       "headphone": "",
@@ -110,8 +110,8 @@
       "phone": "",
       "portable": "",
       "car": "",
-      "default": ["", "", ""]
-    }
+      "default": ["", "", ""],
+    },
   },
 
   "pulseaudio#microphone": {
@@ -121,14 +121,14 @@
     "on-click": "pamixer --default-source -t",
     "on-scroll-up": "pamixer --default-source -i 5",
     "on-scroll-down": "pamixer --default-source -d 5",
-    "scroll-step": 5
+    "scroll-step": 5,
   },
 
   "temperature": {
     "thermal-zone": 1,
     "format": "{temperatureF}°F ",
     "critical-threshold": 80,
-    "format-critical": "{temperatureC}°C "
+    "format-critical": "{temperatureC}°C ",
   },
 
   "network": {
@@ -138,7 +138,7 @@
     "tooltip-format": "{essid} - {ifname} via {gwaddr}",
     "format-linked": "{ifname} (No IP)",
     "format-disconnected": "Disconnected ⚠",
-    "format-alt": "{ifname}:{essid} {ipaddr}/{cidr}"
+    "format-alt": "{ifname}:{essid} {ipaddr}/{cidr}",
   },
 
   "bluetooth": {
@@ -147,12 +147,12 @@
     "format-connected": " {num_connections}",
     "tooltip-format": "{device_alias}",
     "tooltip-format-connected": " {device_enumerate}",
-    "tooltip-format-enumerate-connected": "{device_alias}"
+    "tooltip-format-enumerate-connected": "{device_alias}",
   },
 
   "custom/launch_wofi": {
-    "format": " ",
+    "format": " ",
     "on-click": "pkill wofi; wofi",
-    "tooltip": false
-  }
+    "tooltip": false,
+  },
 }
