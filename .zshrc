@@ -563,6 +563,10 @@ export MOZ_ENABLE_WAYLAND=1
 # Local binaries
 export PATH=$PATH:$HOME/.local/bin:$HOME/bin
 
+# Node js 
+export NODE_PATH=~/.npm-packages/lib/node_modules
+export PATH=~/.npm-packages/bin:$PATH
+
 export AGS_SKIP_V_CHECK=true ags
 export ANDROID_HOME=/home/srinath/Android/Sdk
 export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
