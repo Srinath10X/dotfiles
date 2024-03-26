@@ -30,26 +30,26 @@ Just install the packages and copy the config files that works for most of the t
 
 1. Clone the repo
 
-```
+```bash
 git clone https://github.com/Srinath10X/dotfiles.git
 ```
 
 2. Make sure that you have installed all the packages and its dependencies
 3. cd to the dotfiles directory
 
-```
+```bash
 cd dotfiles
 ```
 
 4. Copy the dotfiles into the .config directory
 
-```
+```bash
 cp -r .config/* ~/.config
 ```
 
 5. Also copy the configuration.nix file
 
-```
+```bash
 cp configuration.nix /etc/nixos/
 ```
 
