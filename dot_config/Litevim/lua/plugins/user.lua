@@ -1,2 +1,3 @@
--- User plugins here
-return {}
+return {
+  { "Fymyte/rasi.vim" },
+}

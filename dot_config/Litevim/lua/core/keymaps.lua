@@ -8,6 +8,7 @@ local opts = { noremap = true }
 -- General keymap's
 keymap.set("i", "fj", "<ESC>") -- i to go to into insert mode and fj is same as esc
 keymap.set("n", "<leader>nh", ":nohl<CR>", { silent = true }) -- to clear search space+h
+keymap.set("i", "<C-BS>", "<C-W>")
 
 -- increment/decrement numbers
 keymap.set("n", "<leader>+", "<C-a>") -- increment
@@ -19,8 +20,7 @@ keymap.set("n", "gT", ":bp<CR>", { silent = true }) -- previous buffer
 keymap.set("n", "gx", ":bdelete!<CR>", { silent = true }) -- buffer delete
 
 -- toggle terminal
-keymap.set("n", "<c-t>", ":ToggleTerm direction=float<CR>") -- buffer delete
-keymap.set("n", "<leader>h", "<Cmd>ToggleTerm direction=horizontal<CR>") -- buffer delete
+keymap.set("n", "<c-t>", ":ToggleTerm direction=float<CR>") -- floating terminal
 keymap.set("t", "<esc>", [[<C-\><C-n>]], opts)
 keymap.set("t", "fj", [[<C-\><C-n>]], opts)
 keymap.set("t", "<C-h>", [[<C-\><C-n><C-W>h]], opts)
@@ -51,8 +51,8 @@ keymap.set("n", "<leader>/", "gcc")
 keymap.set("n", "<leader>e", ":NvimTreeFindFileToggle<CR>", { silent = true })
 
 -- resize
-keymap.set("n", "<leader>[", ":vertical resize +1<CR>")
-keymap.set("n", "<leader>]", ":vertical resize -1<CR>")
+keymap.set("n", "<leader>[", ":vertical resize +1<CR>", { silent = true })
+keymap.set("n", "<leader>]", ":vertical resize -1<CR>", { silent = true })
 
 -- vs code like line jump
 keymap.set("i", "<c-Enter>", "<ESC>o")
@@ -82,3 +82,14 @@ keymap.set("n", "[d", "<cmd>Lspsaga diagnostic_jump_prev<CR>") -- jump to previo
 keymap.set("n", "]d", "<cmd>Lspsaga diagnostic_jump_next<CR>") -- jump to next diagnostic in buffer
 keymap.set("n", "K", "<cmd>Lspsaga hover_doc<CR>") -- show documentation for what is under cursor
 keymap.set("n", "<leader>o", "<cmd>LSoutlineToggle<CR>") -- see outline on right hand side
+
+-- bufferline
+keymap.set("n", "<leader>1", "<Cmd>BufferLineGoToBuffer 1<CR>")
+keymap.set("n", "<leader>2", "<Cmd>BufferLineGoToBuffer 2<CR>")
+keymap.set("n", "<leader>3", "<Cmd>BufferLineGoToBuffer 3<CR>")
+keymap.set("n", "<leader>4", "<Cmd>BufferLineGoToBuffer 4<CR>")
+keymap.set("n", "<leader>5", "<Cmd>BufferLineGoToBuffer 5<CR>")
+keymap.set("n", "<leader>6", "<Cmd>BufferLineGoToBuffer 6<CR>")
+keymap.set("n", "<leader>7", "<Cmd>BufferLineGoToBuffer 7<CR>")
+keymap.set("n", "<leader>8", "<Cmd>BufferLineGoToBuffer 8<CR>")
+keymap.set("n", "<leader>9", "<Cmd>BufferLineGoToBuffer 9<CR>")
