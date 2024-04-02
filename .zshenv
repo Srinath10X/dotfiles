@@ -5,15 +5,28 @@ export qt_qpa_platform=wayland
 export ANDROID_HOME=/home/srinath/Android/Sdk
 export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
 
-#Neovim
+# Neovim
 export EDITOR="nvim"
 export VISUAL="nvim"
+
+# Node js
+export NODE_PATH=~/.npm-packages/lib/node_modules
+export PATH=~/.npm-packages/bin:$PATH
 
 # Ags skip v cheak 
 export AGS_SKIP_V_CHECK=true ags
 
 # fzf default options
 export FZF_DEFAULT_OPTS='--prompt=" 󰍉 Search " --height=~100% --layout=reverse --border --pointer="󰁕" --no-scrollbar  --exit-0'
+
+# Grim
+export GRIM_DEFAULT_DIR=/home/srinath/Pictures/
+
+# Firefox
+export MOZ_ENABLE_WAYLAND=1
+
+# Allow nixos unfree software
+export NIXPKGS_ALLOW_UNFREE=1
 
 # LF_ICONS
 export LF_ICONS="\
@@ -178,4 +191,3 @@ ex=:\
 *.pdf=:\
 *.nix=:\
 "
-
