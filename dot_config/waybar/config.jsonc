@@ -69,7 +69,7 @@
   },
 
   "clock": {
-    "format": "{: %I:%M %p}",
+    "format": " {:%I:%M %p}",
     "tooltip-format": "<big>{:  %a,%d %b}</big>\n<tt><small>{calendar}</small></tt>",
   },
 
@@ -151,7 +151,7 @@
   },
 
   "custom/launch_wofi": {
-    "format": " ",
+    "format": " ",
     "on-click": "pkill wofi; wofi",
     "tooltip": false,
   },
