@@ -9,5 +9,29 @@ set hidden true
 &ctpv -s $id
 &ctpvquit $id
 
-map o $nvim
+map r $nvim "$f"
 
+cmd mkdir ${{
+	printf "Directory name : "
+	read dirName
+	mkdir $dirName
+}}
+
+cmd touch ${{
+	printf "File name : "
+	read fileName
+	touch $fileName
+}}
+
+cmd kitty ${{
+	kitten icat "$f"
+}}
+
+cmd del ${{
+	rm "$f"
+}}
+
+map gh cd ~/code/github/
+map gc cd ~/.config/
+map gb cd ~/
+map i kitty

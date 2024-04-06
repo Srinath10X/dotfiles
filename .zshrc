@@ -3,6 +3,8 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
+source ~/.p10k/powerlevel10k.zsh-theme
+
 export ZSH=~/.oh-my-zsh/
 
 ZSH_THEME="powerlevel10k/powerlevel10k"
@@ -119,6 +121,9 @@ alias ytv-best="yt-dlp -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/bestvideo+besta
 #liveserver
 alias live="python -m http.server "
 
+# music 
+alias music="./music.sh"
+
 # Neovim
 export EDITOR="nvim"
 export VISUAL="nvim"
@@ -142,4 +147,4 @@ export PATH=~/.npm-packages/bin:$PATH
 export AGS_SKIP_V_CHECK=true ags
 export ANDROID_HOME=/home/srinath/Android/Sdk
 export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
-source ~/powerlevel10k/powerlevel10k.zsh-theme
+source /home/srinath/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
