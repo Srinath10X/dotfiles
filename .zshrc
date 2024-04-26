@@ -124,6 +124,9 @@ alias live="python -m http.server "
 # music 
 alias music="./music.sh"
 
+# grep fonts
+alias grepfonts="fc-list : family | grep"
+
 # Neovim
 export EDITOR="nvim"
 export VISUAL="nvim"
