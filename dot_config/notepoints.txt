@@ -11,3 +11,7 @@ sudo chmod 660 /var/run/dbus/system_bus_socket
 
 Restart D-Bus Service:
 sudo systemctl restart dbus
+
+// Installing obs studio for display capture 
+
+install qt6-wayland

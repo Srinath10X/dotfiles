@@ -47,12 +47,6 @@ cd dotfiles
 cp -r .config/* ~/.config
 ```
 
-5. Also copy the configuration.nix file
-
-```bash
-cp configuration.nix /etc/nixos/
-```
-
 ## Contributing
 
 If you have improvements or additional configurations that might benefit others, I welcome contributions! Please fork the repository, make your changes, and submit a pull request.
