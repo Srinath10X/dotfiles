@@ -17,6 +17,10 @@ cmd mkdir ${{
 	mkdir $dirName
 }}
 
+cmd pdf ${{
+	mupdf "$f"
+}}
+
 cmd touch ${{
 	printf "File name : "
 	read fileName
@@ -29,6 +33,10 @@ cmd kitty ${{
 
 cmd del ${{
 	rm "$f"
+}}
+
+cmd mpv ${{
+	mpv "$f"
 }}
 
 map gh cd ~/code/github/
