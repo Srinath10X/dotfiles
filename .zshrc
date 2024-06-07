@@ -3,13 +3,15 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-source ~/.p10k/powerlevel10k.zsh-theme
-
 export ZSH=~/.oh-my-zsh/
 
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
 ZSH_CUSTOM=~/.oh-my-zsh/
+
+HISTFILE=.zsh_history
+SAVEHIST=1000
+HISTSIZE=1000
 
 plugins=(git)
 
@@ -38,8 +40,8 @@ alias ytv-best="yt-dlp -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/bestvideo+besta
 #get the error messages from journalctl
 alias jctl="journalctl -p 3 -xb"
 
-# # ex = EXtractor for all kinds of archives
-# # usage: ex <file>
+# ex = EXtractor for all kinds of archives
+# usage: ex <file>
 ex ()
 {
   if [ -f $1 ] ; then
@@ -88,6 +90,7 @@ ex ()
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 alias lite="NVIM_APPNAME=Litevim nvim"
+alias fea="NVIM_APPNAME=FeatherVim nvim"
 alias lff="ranger"
 alias vim="neovide . && exit"
 
@@ -127,15 +130,16 @@ alias music="./music.sh"
 # grep fonts
 alias grepfonts="fc-list : family | grep"
 
-# Neovim
-export EDITOR="nvim"
-export VISUAL="nvim"
+# shutdown & reboot
+alias sd="shutdown now"
+alias rb="reboot"
+alias gemma="ollama run gemma"
 
 # Grim
 export GRIM_DEFAULT_DIR=/home/srinath/Pictures/
 
 # Firefox
-export MOZ_ENABLE_WAYLAND=1
+# export MOZ_ENABLE_WAYLAND=1
 
 # Gtk theme
 export GTK_THEME=Catppuccin-Mocha-B
@@ -148,10 +152,19 @@ export NODE_PATH=~/.npm-packages/lib/node_modules
 export PATH=~/.npm-packages/bin:$PATH
 
 export AGS_SKIP_V_CHECK=true ags
+
+# Wayland
+export QT_QPA_PLATFORM=xcb
+
+# Android Studio ENV's
 export ANDROID_HOME=/home/srinath/Android/Sdk
 export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
 
 export PATH="$HOME/.cargo/bin:$PATH"
 export PATH="$HOME/go/bin/:$PATH"
 
-source /home/srinath/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+eval "$(zoxide init zsh)"
+alias cd="z"
+
+source ~/.powerlevel10k/powerlevel10k.zsh-theme
+source ~/.zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
