@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DIR="$HOME/walls/"
+DIR="$HOME/Pictures/"
 PICS=("$DIR"/*)  # Store file paths in an array
 
 # Check if the directory is empty
@@ -32,7 +32,7 @@ if pidof swaybg > /dev/null; then
 fi
 
 # Initialize or query swww
-swww query || swww init
+swww query || swww-daemon --format xrgb
 
 # Change wallpaper using swww
 swww img "$NEXT_PIC" --transition-fps 30 --transition-type any --transition-duration 3

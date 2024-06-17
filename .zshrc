@@ -5,11 +5,13 @@ fi
 
 export ZSH=~/.oh-my-zsh/
 
+bindkey '^H' backward-kill-word
+
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
 ZSH_CUSTOM=~/.oh-my-zsh/
 
-HISTFILE=.zsh_history
+HISTFILE=$HOME/.zsh_history
 SAVEHIST=1000
 HISTSIZE=1000
 
@@ -89,7 +91,7 @@ ex ()
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-alias lite="NVIM_APPNAME=Litevim nvim"
+alias nv="NVIM_APPNAME=Litevim nvim"
 alias fea="NVIM_APPNAME=FeatherVim nvim"
 alias lff="ranger"
 alias vim="neovide . && exit"
@@ -151,10 +153,14 @@ export PATH=$PATH:$HOME/.local/bin:$HOME/bin
 export NODE_PATH=~/.npm-packages/lib/node_modules
 export PATH=~/.npm-packages/bin:$PATH
 
+# Ags
 export AGS_SKIP_V_CHECK=true ags
 
+# ytfzf
+export  YTFZF_PREF='22'    
+
 # Wayland
-export QT_QPA_PLATFORM=xcb
+export QT_QPA_PLATFORM=wayland
 
 # Android Studio ENV's
 export ANDROID_HOME=/home/srinath/Android/Sdk
@@ -166,5 +172,9 @@ export PATH="$HOME/go/bin/:$PATH"
 eval "$(zoxide init zsh)"
 alias cd="z"
 
-source ~/.powerlevel10k/powerlevel10k.zsh-theme
+alias packs="nvim ~/.config/confix/packages.json"
+
+# export CONFIX_PACKAGES_FILE_PATH="$HOME/packages.json"
+
+source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
 source ~/.zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
