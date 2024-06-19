@@ -1,1 +1,1 @@
-(include "./modules/clock.yuck")
+(include "./modules/clock/clock.yuck")

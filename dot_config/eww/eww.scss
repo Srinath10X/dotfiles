@@ -1,14 +1,7 @@
+@import "./modules/clock/clock.scss";
+
 * {
   all: unset;
-  font-size: 40px;
+  /* default*/
   font-family: JetBrainsMono NF Bold;
-}
-
-.box {
-  background: #1e1e1e;
-  color: #fff;
-}
-
-.clock {
-  font-weight: bold;
 }

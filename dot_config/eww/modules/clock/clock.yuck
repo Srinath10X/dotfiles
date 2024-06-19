@@ -1,18 +1,23 @@
 (defpoll hour :interval "5s" `date "+%I"`)
 (defpoll minutes :interval "5s" `date "+%M"`)
 (defpoll ampm :interval "5s" `date "+%p"`)
+(defpoll date :interval "5s" `date "+%d"`)
+(defpoll month :interval "5s" `date "+%b"`)
+(defpoll year :interval "5s" `date "+%Y"`)
 
-(defwindow example
+(defwindow clock
 	; "monitor" ->  to specify in which monitor this window is going to be in
 	:monitor 0 
 
 	; "geometry" -> define the geometry the window 
   :geometry (geometry 
-		:x "0%" ; gap or kind of margin from x - direction
+		:x "2%" ; gap or kind of margin from x - direction
 		:y "20px" ; simillarly for y - direction
-		:width "98.5%" ; what do you really need to read this comment for this property
+		:width "15%" ; what do you really need to read this comment for this property
 		:height "30px"
-		:anchor "top center" ; it can be Either center or combinations of top, center, bottom and left, center, right 
+
+		; anchor it can be Either center or combinations of top, center, bottom and left, center, right 
+		:anchor "top right" 
 	)
 
 	; Stacking either foreground or background 
@@ -35,12 +40,21 @@
 
 (defwidget clock [?arg]
 	(box
-		:orientation "h"
+		:orientation "v"
 		:halign "center"
 		:height "30"
 		:width "30"
-		:class "clock"
-		(label :text "${hour}:${minutes} ${ampm}")
+		(button
+			:onclick "bash $HOME/.config/waybar/scripts/wall.sh"
+			(label 
+				:orientation "h" 
+				:text " ${hour}:${minutes} ${ampm}" 
+				:class "clock"
+			)
+		)
+		(label 
+			:text " ${date} ${month} ${year}"
+			:class "date"
+		)
 	)
 )
-

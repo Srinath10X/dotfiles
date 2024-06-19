@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DIR="$HOME/Pictures/"
+DIR="$HOME/.config/hypr/wallpapers/"
 PICS=("$DIR"/*)  # Store file paths in an array
 
 # Check if the directory is empty
