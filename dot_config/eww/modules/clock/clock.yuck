@@ -34,8 +34,7 @@
 
 	;What the heck is this should I define the window name here
 	:namespace ""
-  (clock 
-	)
+  (clock)
 )
 
 (defwidget clock [?arg]
