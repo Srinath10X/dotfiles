@@ -165,6 +165,9 @@
       <property name="hover-switch-category" type="bool" value="true"/>
       <property name="menu-height" type="int" value="600"/>
       <property name="view-mode" type="int" value="1"/>
+      <property name="recent" type="array">
+        <value type="string" value="firefox.desktop"/>
+      </property>
     </property>
   </property>
 </channel>
