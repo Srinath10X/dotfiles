@@ -1,0 +1,49 @@
+@-moz-document url(about:home), url(about:newtab), url(about:privatebrowsing){
+
+.click-target-container *,
+.top-sites-list * {
+	color: #f7ece4 !important;
+}
+
+body::before {
+	content: "";
+	z-index: -1;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: #1c1b22;
+	background-size: cover;
+	width: 100vw;
+	height: 100vh;
+}
+}
+
+@-moz-document url(about:newtab), url(about:home), url(about:privatebrowsing){
+main {
+	display: flex !important;
+	align-items: center !important;
+	justify-content: center !important;
+}
+
+.logo {
+	background-size: 3rem !important;
+	padding: 0;
+}
+
+.icon,
+.search-inner-wrapper {
+	display: none !important;
+}
+
+.search-wrapper {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.wordmark {
+	margin-inline-start: 0 !important;
+	margin-right: 1rem;
+}
+}
