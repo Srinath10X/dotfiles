@@ -1,32 +1,47 @@
-# Wayland
-export qt_qpa_platform=wayland
+# ------------------------------- #
+# --------->  Exports  <--------- #
+# ------------------------------- #
 
-# Android Sdk
+# Wayland
+export QT_QPA_PLATFORM=wayland
+export MOZ_ENABLE_WAYLAND=1
+
+# Android Studio ENV's
 export ANDROID_HOME=/home/srinath/Android/Sdk
 export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
 
-# Neovim
-export EDITOR="nvim"
+# Basic environment settings
+export USER="srinath"
+export HOSTNAME="archlinux"
+export SHELL="zsh"
+
+# Customize pfetch information display
+export PF_INFO="ascii title os host pkgs shell memory"
+
+# prefered editor
+export EDITOR="nvim" 
 export VISUAL="nvim"
 
-# Node js
+# Add local bin directories to PATH
+export PATH=$HOME/.local/bin:$HOME/bin:$PATH
+export PATH=$HOME/.cargo/bin:$PATH
+export PATH=$HOME/go/bin:$PATH
+
+# Node js 
 export NODE_PATH=~/.npm-packages/lib/node_modules
 export PATH=~/.npm-packages/bin:$PATH
 
-# Ags skip v cheak 
+# Ags
 export AGS_SKIP_V_CHECK=true ags
+
+# Grim
+export GRIM_DEFAULT_DIR=$HOME/Pictures/screenshorts/
 
 # fzf default options
 export FZF_DEFAULT_OPTS='--prompt=" 󰍉 Search " --height=~100% --layout=reverse --border --pointer="󰁕" --no-scrollbar  --exit-0'
 
-# Grim
-export GRIM_DEFAULT_DIR=/home/srinath/Pictures/
-
-# Firefox
-export MOZ_ENABLE_WAYLAND=1
-
-# Allow nixos unfree software
-export NIXPKGS_ALLOW_UNFREE=1
+# ytfzf
+export  YTFZF_PREF='22'    
 
 # LF_ICONS
 export LF_ICONS="\
