@@ -4,10 +4,12 @@
 
 # Wayland
 export QT_QPA_PLATFORM=wayland
+export QT_PLUGIN_PATH=/usr/lib/qt/plugins/
 export MOZ_ENABLE_WAYLAND=1
 
 # Android Studio ENV's
 export ANDROID_HOME=/home/srinath/Android/Sdk
+export ANDROID_EMULATOR_WAIT_TIME_BEFORE_KILL=2
 export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
 
 # Basic environment settings
@@ -18,18 +20,23 @@ export SHELL="zsh"
 # Customize pfetch information display
 export PF_INFO="ascii title os host pkgs shell memory"
 
-# prefered editor
+# Set your prefered editor of your choice
 export EDITOR="nvim" 
 export VISUAL="nvim"
+
+# Ollama host
+# export OLLAMA_HOST=127.0.0.1:11435
 
 # Add local bin directories to PATH
 export PATH=$HOME/.local/bin:$HOME/bin:$PATH
 export PATH=$HOME/.cargo/bin:$PATH
 export PATH=$HOME/go/bin:$PATH
+export PATH=$HOME/development/flutter/bin:$PATH
 
 # Node js 
 export NODE_PATH=~/.npm-packages/lib/node_modules
 export PATH=~/.npm-packages/bin:$PATH
+export NVM_DIR="$HOME/.nvm"
 
 # Ags
 export AGS_SKIP_V_CHECK=true ags
@@ -41,7 +48,7 @@ export GRIM_DEFAULT_DIR=$HOME/Pictures/screenshorts/
 export FZF_DEFAULT_OPTS='--prompt=" 󰍉 Search " --height=~100% --layout=reverse --border --pointer="󰁕" --no-scrollbar  --exit-0'
 
 # ytfzf
-export  YTFZF_PREF='22'    
+export YTFZF_PREF='22'    
 
 # LF_ICONS
 export LF_ICONS="\
@@ -206,3 +213,4 @@ ex=:\
 *.pdf=:\
 *.nix=:\
 "
+. "$HOME/.cargo/env"
