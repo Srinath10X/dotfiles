@@ -3,7 +3,7 @@
 # ------------------------------- #
 
 # Wayland
-export QT_QPA_PLATFORM=wayland
+export QT_QPA_PLATFORM="wayland;xcb"
 export QT_PLUGIN_PATH=/usr/lib/qt/plugins/
 export MOZ_ENABLE_WAYLAND=1
 
@@ -213,4 +213,3 @@ ex=:\
 *.pdf=:\
 *.nix=:\
 "
-. "$HOME/.cargo/env"

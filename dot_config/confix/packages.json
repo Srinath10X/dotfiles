@@ -23,6 +23,7 @@
     "neovim",
     "nodejs",
     "npm",
+    "noto-fonts",
     "obs-studio",
     "pamixer",
     "polkit-gnome",
@@ -48,6 +49,8 @@
     "zsh",
     "zsh-autosuggestions",
     "zsh-syntax-highlighting",
-    "zsh-theme-powerlevel10k-git"
+    "zsh-theme-powerlevel10k-git",
+    "spotify-adblock",
+    "noto-fonts-emoji"
   ]
 }
