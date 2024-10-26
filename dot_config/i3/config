@@ -38,7 +38,7 @@ exec --no-startup-id polybar
 exec --no-startup-id picom
 exec --no-startup-id dunst
 exec --no-startup-id nitrogen --restore
-exec --no-startup-id synclient VertScrollDelta=-111
+exec --no-startup-id feh --bg-fill ~/.config/hypr/wallpapers/oldxfcewall.jpg
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
