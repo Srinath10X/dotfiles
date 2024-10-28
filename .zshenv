@@ -12,6 +12,9 @@ export ANDROID_HOME=/home/srinath/Android/Sdk
 export ANDROID_EMULATOR_WAIT_TIME_BEFORE_KILL=2
 export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
 
+# Emacs
+export PATH=$HOME/.config/emacs/bin:$PATH
+
 # Basic environment settings
 export USER="srinath"
 export HOSTNAME="archlinux"
