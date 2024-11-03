@@ -6,6 +6,7 @@
 export QT_QPA_PLATFORM="wayland;xcb"
 export QT_PLUGIN_PATH=/usr/lib/qt/plugins/
 export MOZ_ENABLE_WAYLAND=1
+export LANG=en_US.UTF-8
 
 # Android Studio ENV's
 export ANDROID_HOME=/home/srinath/Android/Sdk
