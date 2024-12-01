@@ -1,0 +1,23 @@
+[[language]]
+name = "c"
+auto-format = true
+formatter = { command = "clang-format" }
+language-servers = [
+  { name = "clangd" }
+]
+
+[[language]]
+name = "cpp"
+auto-format = true
+formatter = { command = "clang-format" }
+language-servers = [
+  { name = "clangd" }
+]
+
+[[language]]
+name = "html"
+auto-format = true
+formatter = { command = "vscode-html-language-server" }
+language-servers = [
+  { name = "vscode-html-language-server" }
+]

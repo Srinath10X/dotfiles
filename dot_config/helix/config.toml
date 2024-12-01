@@ -6,3 +6,6 @@ mouse = false
 
 [editor.file-picker]
 hidden = false
+
+[keys.select]
+tab = "extend_parent_node_end"
