@@ -16,6 +16,9 @@ export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
 # Emacs
 export PATH=$HOME/.config/emacs/bin:$PATH
 
+# Nix
+export NIXPKGS_ALLOW_UNFREE=1
+
 # Basic environment settings
 export USER="srinath"
 export HOSTNAME="archlinux"
@@ -25,7 +28,7 @@ export SHELL="zsh"
 export PF_INFO="ascii title os host pkgs shell memory"
 
 # Set your prefered editor of your choice
-export EDITOR="nvim" 
+export EDITOR="nvim"
 export VISUAL="nvim"
 
 # Ollama host
@@ -36,8 +39,9 @@ export PATH=$HOME/.local/bin:$HOME/bin:$PATH
 export PATH=$HOME/.cargo/bin:$PATH
 export PATH=$HOME/go/bin:$PATH
 export PATH=$HOME/development/flutter/bin:$PATH
+export PATH="/usr/lib/jvm/java-8-openjdk/bin:$PATH"
 
-# Node js 
+# Node js
 export NODE_PATH=~/.npm-packages/lib/node_modules
 export PATH=~/.npm-packages/bin:$PATH
 export NVM_DIR="$HOME/.nvm"
@@ -52,7 +56,7 @@ export GRIM_DEFAULT_DIR=$HOME/Pictures/screenshorts/
 export FZF_DEFAULT_OPTS='--prompt=" 󰍉 Search " --height=~100% --layout=reverse --border --pointer="󰁕" --no-scrollbar  --exit-0'
 
 # ytfzf
-export YTFZF_PREF='22'    
+export YTFZF_PREF='22'
 
 # LF_ICONS
 export LF_ICONS="\
