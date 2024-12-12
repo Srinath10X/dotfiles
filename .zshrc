@@ -8,7 +8,7 @@ plugins=(git)
 
 # zsh_history
 HISTFILE=$HOME/.zsh_history
-HISTSIZE=5000
+HISTSIZE=20000
 SAVEHIST=$HISTSIZE
 HISTDUP=erase
 
