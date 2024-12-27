@@ -67,6 +67,7 @@ alias la='exa -a --icons --color=always --group-directories-first'
 alias l='exa -F --icons --color=always --group-directories-first'
 alias l.='exa -a | egrep "^\."'
 
+# git related
 alias ga="git add"
 alias gc="git commit -m "
 alias gp="git push"
@@ -91,6 +92,8 @@ alias cd="z"
 alias packs="nvim ~/.config/confix/packages.json"
 alias lazy="NVIM_APPNAME=Lazyvim nvim"
 
+# nix
+alias nix-shell="nix-shell --run $SHELL"
 
 # -------------------------------- #
 # --------->  Sources  <---------- #
