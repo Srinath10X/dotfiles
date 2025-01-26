@@ -15,9 +15,7 @@ language-servers = [
 ]
 
 [[language]]
-name = "html"
-auto-format = true
-formatter = { command = "vscode-html-language-server" }
+name = "typescript"
 language-servers = [
-  { name = "vscode-html-language-server" }
+  { name = "typescript-language-server" }
 ]
