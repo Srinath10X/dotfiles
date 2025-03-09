@@ -6,45 +6,39 @@
 export QT_QPA_PLATFORM="wayland;xcb"
 export QT_PLUGIN_PATH=/usr/lib/qt/plugins/
 export MOZ_ENABLE_WAYLAND=1
-export LANG=en_US.UTF-8
+
+# SSH related env's
+export TERM=xterm-256color
+export TERMINFO=/usr/share/terminfo
 
 # Android Studio ENV's
-export ANDROID_HOME=/home/srinath/Android/Sdk
-export ANDROID_EMULATOR_WAIT_TIME_BEFORE_KILL=2
-export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
+export ANDROID_HOME=$HOME/Android/Sdk
+export ANDROID_NDK_ROOT=$HOME/Android/Sdk/ndk
+export JAVA_HOME=/usr/lib/jvm/java-23-openjdk/
 
-# Emacs
-export PATH=$HOME/.config/emacs/bin:$PATH
+# Android Studio PATH'S
+export PATH=$ANDROID_HOME/tools:$PATH
+export PATH=$ANDROID_HOME/platform-tools:$PATH
 
 # Nix
 export NIXPKGS_ALLOW_UNFREE=1
-
-# Basic environment settings
-export USER="srinath"
-export HOSTNAME="archlinux"
-export SHELL="zsh"
-
-# Customize pfetch information display
-export PF_INFO="ascii title os host pkgs shell memory"
+export PATH=$HOME/.nix-profile/bin:$PATH
 
 # Set your prefered editor of your choice
 export EDITOR="nvim"
 export VISUAL="nvim"
 
-# Ollama host
-# export OLLAMA_HOST=127.0.0.1:11435
-
 # Add local bin directories to PATH
-export PATH=$HOME/.local/bin:$HOME/bin:$PATH
-export PATH=$HOME/.cargo/bin:$PATH
 export PATH=$HOME/go/bin:$PATH
+export PATH=$JAVA_HOME/bin:$PATH
+export PATH=$HOME/.cargo/bin:$PATH
+export PATH=$HOME/.local/bin:$HOME/bin:$PATH
 export PATH=$HOME/development/flutter/bin:$PATH
-export PATH="/usr/lib/jvm/java-8-openjdk/bin:$PATH"
+export PATH=$HOME/.local/.npm-packages/bin:$PATH
 
 # Node js
-export NODE_PATH=~/.npm-packages/lib/node_modules
-export PATH=~/.npm-packages/bin:$PATH
 export NVM_DIR="$HOME/.nvm"
+export NODE_PATH=~/.npm-packages/lib/node_modules
 
 # Ags
 export AGS_SKIP_V_CHECK=true ags
@@ -57,6 +51,9 @@ export FZF_DEFAULT_OPTS='--prompt=" 󰍉 Search " --height=~100% --layout=revers
 
 # ytfzf
 export YTFZF_PREF='22'
+
+# pkgconfig path
+export PKG_CONFIG_PATH=/usr/lib/pkgconfig:$PKG_CONFIG_PATH
 
 # LF_ICONS
 export LF_ICONS="\
@@ -221,5 +218,3 @@ ex=:\
 *.pdf=:\
 *.nix=:\
 "
-
-if [ -e /home/srinath/.nix-profile/etc/profile.d/nix.sh ]; then . /home/srinath/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
