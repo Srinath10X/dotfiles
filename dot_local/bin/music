@@ -1,4 +1,4 @@
 #!/bin/bash
 
-video_url=$(invidious_instance="https://vid.puffyan.us" ytfzf -t -L -T wayland)
+video_url=$(invidious_instance="https://inv.nadeko.net" ytfzf -t -L -T kitty)
 mpv --no-video "$video_url"
