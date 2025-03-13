@@ -14,7 +14,6 @@ export TERMINFO=/usr/share/terminfo
 # Android Studio ENV's
 export ANDROID_HOME=$HOME/Android/Sdk
 export ANDROID_NDK_ROOT=$HOME/Android/Sdk/ndk
-export JAVA_HOME=/usr/lib/jvm/java-23-openjdk/
 
 # Android Studio PATH'S
 export PATH=$ANDROID_HOME/tools:$PATH
@@ -30,7 +29,6 @@ export VISUAL="nvim"
 
 # Add local bin directories to PATH
 export PATH=$HOME/go/bin:$PATH
-export PATH=$JAVA_HOME/bin:$PATH
 export PATH=$HOME/.cargo/bin:$PATH
 export PATH=$HOME/.local/bin:$HOME/bin:$PATH
 export PATH=$HOME/development/flutter/bin:$PATH
