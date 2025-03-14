@@ -5,6 +5,9 @@
 # Wayland
 export QT_QPA_PLATFORM="wayland;xcb"
 export QT_PLUGIN_PATH=/usr/lib/qt/plugins/
+
+# Firefox
+export MOZ_USE_XINPUT2=1
 export MOZ_ENABLE_WAYLAND=1
 
 # SSH related env's
