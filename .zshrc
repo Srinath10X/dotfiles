@@ -89,9 +89,6 @@ alias ytv-best="yt-dlp -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/bestvideo+besta
 eval "$(zoxide init zsh)"
 alias cd="z"
 
-alias packs="nvim ~/.config/confix/packages.json"
-alias lazy="NVIM_APPNAME=Lazyvim nvim"
-
 # nix
 alias nix-shell="nix-shell --run $SHELL"
 
