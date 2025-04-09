@@ -1,0 +1,58 @@
+/* --- Mostly for fonts nothing special --- */
+* {
+  font-size: 16px;
+  font-weight: bold;
+  font-family: "JetBrainsMono Nerd Font";
+}
+
+/* --- Waybar Styles --- */
+window#waybar {
+  color: #cdd6f4;
+  background: #1a1e23;
+  border-radius: 0.5rem;
+  border: 2px solid rgba(117, 170, 240, 0.5);
+}
+
+/* workspaces module styles */
+#workspaces {
+  margin: 0 10px;
+}
+
+/* For workspace button*/
+#workspaces button {
+  /* Changing the padding will effect default padding */
+  color: #b4befe;
+}
+
+#workspaces button:hover {
+  background: transparent;
+  border: transparent;
+  box-shadow: none;
+}
+
+#workspaces button.active {
+  color: #75aaf0;
+}
+
+#workspaces button.urgent {
+  color: #a6e3a1;
+}
+
+#battery,
+#network,
+#pulseaudio {
+  margin-left: 20px;
+}
+
+#network {
+  color: #f9e2af;
+}
+
+#pulseaudio {
+  color: #89b4fa;
+}
+
+#battery {
+  color: #a6e3a1;
+  margin-right: 20px;
+}
