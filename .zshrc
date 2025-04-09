@@ -7,10 +7,10 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 plugins=(git)
 
 # zsh_history
-HISTFILE=$HOME/.zsh_history
+HISTDUP=erase
 HISTSIZE=20000
 SAVEHIST=$HISTSIZE
-HISTDUP=erase
+HISTFILE=$HOME/.zsh_history
 
 # history opts
 setopt appendhistory
@@ -31,7 +31,7 @@ bindkey '^[w' kill-region
 # ---------->  Scripts <----------- #
 # --------------------------------- #
 
-# ex = EXtractor for all kinds of archives
+# ex = EXtractor for all kinds of archives copied 
 ex () {
   if [ -f "$1" ]; then
     case $1 in
@@ -65,14 +65,10 @@ alias ls='exa --icons --color=always --group-directories-first'
 alias ll='exa -alF --icons --color=always --group-directories-first'
 alias la='exa -a --icons --color=always --group-directories-first'
 alias l='exa -F --icons --color=always --group-directories-first'
-alias l.='exa -a | egrep "^\."'
+alias l.='exa -a | grep -E "^\."'
 
 # git related
-alias ga="git add"
-alias gc="git commit -m "
-alias gp="git push"
-alias gitc="git clone"
-alias gitcb="git clone --single-branch --branch"
+alias gcb="git clone --single-branch --branch"
 
 # shutdown & reboot
 alias sd="shutdown now"
@@ -88,6 +84,7 @@ alias ytv-best="yt-dlp -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/bestvideo+besta
 # zoxide
 eval "$(zoxide init zsh)"
 alias cd="z"
+alias hx="helix"
 
 # nix
 alias nix-shell="nix-shell --run $SHELL"
@@ -97,10 +94,6 @@ alias nix-shell="nix-shell --run $SHELL"
 # -------------------------------- #
 source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/share/zsh/plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
 
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
-alias nvm="unalias nvm; [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"; nvm $@"

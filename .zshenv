@@ -35,14 +35,10 @@ export PATH=$HOME/go/bin:$PATH
 export PATH=$HOME/.cargo/bin:$PATH
 export PATH=$HOME/.local/bin:$HOME/bin:$PATH
 export PATH=$HOME/development/flutter/bin:$PATH
-export PATH=$HOME/.local/.npm-packages/bin:$PATH
 
 # Node js
-export NVM_DIR="$HOME/.nvm"
+export PATH=$HOME/.local/.npm-packages/bin:$PATH
 export NODE_PATH=~/.npm-packages/lib/node_modules
-
-# Ags
-export AGS_SKIP_V_CHECK=true ags
 
 # Grim
 export GRIM_DEFAULT_DIR=$HOME/Pictures/screenshorts/
@@ -50,8 +46,7 @@ export GRIM_DEFAULT_DIR=$HOME/Pictures/screenshorts/
 # fzf default options
 export FZF_DEFAULT_OPTS='--prompt=" 󰍉 Search " --height=~100% --layout=reverse --border --pointer="󰁕" --no-scrollbar  --exit-0'
 
-# ytfzf
-export YTFZF_PREF='22'
-
 # pkgconfig path
 export PKG_CONFIG_PATH=/usr/lib/pkgconfig:$PKG_CONFIG_PATH
+
+if [ -e /home/user/.nix-profile/etc/profile.d/nix.sh ]; then . /home/user/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
