@@ -52,6 +52,10 @@ window#waybar {
   color: #89b4fa;
 }
 
+#pulseaudio.microphone {
+  color: #b4befe;
+}
+
 #battery {
   color: #a6e3a1;
   margin-right: 20px;

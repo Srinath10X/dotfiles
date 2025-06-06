@@ -16,7 +16,7 @@
 	/* ------ Modules ------ */
   "modules-left": ["hyprland/workspaces"],
   "modules-center": ["clock"],
-  "modules-right": ["backlight","pulseaudio","network","battery"],
+  "modules-right": ["backlight", "pulseaudio#microphone", "pulseaudio","network","battery"],
 
 	/* ------ Defining Modules ------ */
 	/* ------ Hyprland Workspaces ------ */
@@ -47,9 +47,21 @@
 		"on-scroll-down": "pamixer -d 5",
 		"scroll-step": 5,
 		"format-icons": {
+			"headset": "",
 			"headphone": "",
 			"default": ["", "", ""]
 		}
+	},
+
+	/* ------ Microphone ------ */
+	"pulseaudio#microphone": {
+		"format": "{format_source}",
+		"format-source": " {volume}%",
+		"format-source-muted": " Muted",
+		"on-click": "pamixer --default-source -t",
+		"on-scroll-up": "pamixer --default-source -i 5",
+		"on-scroll-down": "pamixer --default-source -d 5",
+		"scroll-step": 1
 	},
 
 	/* ------ Network ------ */
