@@ -4,9 +4,7 @@ Arch setup dotfiles: Streamlined for efficiency &amp; aesthetics. Customized con
 
 ## Showcase
 
-![screenshot-1](./.github/home.png)
-![screenshot-2](./.github/coding.png)
-![screenshot-3](./.github/wall.png)
+![screenshot-1](./assets/captures/desktop.png)
 
 ## Table of Contents
 
@@ -18,10 +16,10 @@ Arch setup dotfiles: Streamlined for efficiency &amp; aesthetics. Customized con
 
 ## Overview
 
-- **OS** - EndeavourOS
+- **OS** - ArchLinux
 - **Terminal** - Kitty
 - **Shell** - Zsh
-- **WM** - hyprland
+- **WM** - Hyprland
 - **Editor** - Neovim
 
 ## Installation
