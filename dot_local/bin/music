@@ -1,4 +1,0 @@
-#!/bin/bash
-
-video_url=$(invidious_instance="https://inv.nadeko.net" ytfzf -t -L -T kitty)
-mpv --no-video "$video_url"
