@@ -10,6 +10,9 @@ export QT_PLUGIN_PATH=/usr/lib/qt/plugins/
 export MOZ_USE_XINPUT2=1
 export MOZ_ENABLE_WAYLAND=1
 
+# Java
+export JAVA_HOME=/usr/lib/jvm/java-21-openjdk
+
 # SSH related env's
 export TERM=xterm-256color
 export TERMINFO=/usr/share/terminfo
