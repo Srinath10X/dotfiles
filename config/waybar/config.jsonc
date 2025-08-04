@@ -16,7 +16,7 @@
 	/* ------ Modules ------ */
   "modules-left": ["hyprland/workspaces"],
   "modules-center": ["clock"],
-  "modules-right": ["backlight", "pulseaudio#microphone", "pulseaudio","network","battery"],
+  "modules-right": ["backlight", "pulseaudio#microphone", "pulseaudio","network","battery", "tray"],
 
 	/* ------ Defining Modules ------ */
 	/* ------ Hyprland Workspaces ------ */
