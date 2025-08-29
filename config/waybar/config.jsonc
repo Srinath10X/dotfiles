@@ -103,5 +103,11 @@
 				"today": "<span color='#e05f65'><b>{}</b></span>"
 			}
 		}
+	},
+	/* ------ System-Tray ------ */
+	"tray": {
+		"icon-size": 18,
+		"spacing": 10,
+		"show-passive-items": true
 	}
 }
