@@ -10,6 +10,9 @@ export QT_PLUGIN_PATH=/usr/lib/qt/plugins/
 export MOZ_USE_XINPUT2=1
 export MOZ_ENABLE_WAYLAND=1
 
+# Chromium
+export CHROME_EXECUTABLE=/usr/bin/chromium
+
 # Java
 export JAVA_HOME=/usr/lib/jvm/java-21-openjdk
 
