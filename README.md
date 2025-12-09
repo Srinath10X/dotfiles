@@ -79,10 +79,10 @@ This repository contains my personal Arch Linux configuration files, featuring a
 Ensure you have the following installed:
 
 ```bash
-# core system.
+# Core system.
 base base-devel linux linux-firmware
-# <---------------->
-# essential packages.
+
+# Essential packages.
 hyprland waybar kitty alacritty wofi zsh neovim tmux git
 ```
 
@@ -95,7 +95,9 @@ hyprland waybar kitty alacritty wofi zsh neovim tmux git
 ### Quick Install
 
 ```bash
+# Clone repo
 git clone https://github.com/Srinath10X/dotfiles.git
+
 cd dotfiles
 cp -r config/* ~/.config/
 cp .zshrc .zshenv ~/
@@ -217,7 +219,7 @@ Please ensure your changes are well-documented and tested.
 
 </div>
 
-Thanks to everyone who has contributed to this project.
+***Thanks to everyone who has contributed to this project.***
 
 <!-- PULLED BY OGKAE -->
 
